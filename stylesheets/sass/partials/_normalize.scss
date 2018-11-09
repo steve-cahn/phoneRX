@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+button {
+	background: none;
+	cursor: pointer;
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}

@@ -1,0 +1,18 @@
+$primary-color: #00a3af;
+$darker-prim-clr: darken($primary-color, 20%);
+$lighter-prim-clr: #99dadf;
+
+$light-white: rgba(255, 255, 255, 0.5);
+$light-black: rgba(0, 0, 0, 0.5);
+
+$off-white: #ededed;
+
+$subtle-grey: hsla(0, 0%, 85%, 1);
+
+$border-color: hsl(0, 0%, 60%);
+
+/*  Responsive Design  */
+$xsDevice: 600px;
+$mDevice: 768px;
+$lDevice: 992px;
+$xlDevice: 1200px;

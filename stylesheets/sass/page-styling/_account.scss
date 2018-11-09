@@ -1,0 +1,36 @@
+@import '../partials/_imports';
+
+#account-container {
+	right: 80px;
+
+	.login-info-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0;
+	}
+
+	label {
+		margin-bottom: 0.9rem;
+	}
+
+	input {
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 1.3rem;
+		padding: 0.8rem;
+		padding-left: 1.1rem;
+		border-radius: 2px;
+		border: 1px solid rgba(0, 0, 0, 0.5);
+		width: 22rem;
+
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	#create-account {
+		font-size: 0.8rem;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+	}
+}

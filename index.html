@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>phoneRX</title>
+
+
+    <link rel="stylesheet" href="stylesheets/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="no-transition">
+
+    <nav id="top-nav">
+        <div id="burger-icon" class="mobile pointer"><span></span><span></span><span></span></div>
+        <img src="https://i.postimg.cc/T2VvTQ16/logo-4.png" alt="phoneRX" class="pointer mobile">
+        <div id="nav-container">
+            <div id="menu-bg" class="mobile"></div>
+            <ul id="nav-menu">
+                <li class="menu-item pointer">
+                    <div class="menu-item-text">Home</div>
+                </li>
+                <li class="menu-item selected pointer">
+                    <div class="menu-item-text"><span>Phones</span><span class="expand-symbol menu-symbol mobile">+</span><span
+                            class="contract-symbol menu-symbol mobile">-</span></div>
+                    <ul>
+                        <li><a href="">All Phones</a></li>
+                        <li><a href="">Unlocked Phones</a></li>
+                        <li><a href="">Phone Accessories</a></li>
+                        <li><a href="">Mobile Photo & Video Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item pointer">
+                    <div class="menu-item-text"><span>iPads & Tablets</span><span class="expand-symbol menu-symbol mobile">+</span><span
+                            class="contract-symbol menu-symbol mobile">-</span></div>
+                    <ul>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">Tablets</a></li>
+                        <li><a href="">E-Readers</a></li>
+                        <li><a href="">Kids' Tablets</a></li>
+                        <li><a href="">iPad & Tablet Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item pointer">
+                    <div class="menu-item-text"><span>Wearables</span><span class="expand-symbol menu-symbol mobile">+</span><span
+                            class="contract-symbol menu-symbol mobile">-</span></div>
+                    <ul>
+                        <li><a href="">Apple Watch</a></li>
+                        <li><a href="">Apple Watch Accessories</a></li>
+                        <li><a href="">Fitness & GPS Watches</a></li>
+                        <li><a href="">Smartwatches & Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item pointer">
+                    <div class="menu-item-text"><span>Accessories</span><span class="expand-symbol menu-symbol mobile">+</span><span
+                            class="contract-symbol menu-symbol mobile">-</span></div>
+                    <ul>
+                        <li><a href="">All Accessories</a></li>
+                        <li><a href="">Phone Accessories</a></li>
+                        <li><a href="">Tablet Accessories</a></li>
+                        <li><a href="">Wearable Accessories</a></li>
+                        <li><a href="">Headphones</a></li>
+                        <li><a href="">Earphones</a></li>
+                        <li><a href="">Chargers</a></li>
+                        <li><a href="">Cables</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="right">
+                <div id="account-icon" class="pointer mini-icon desktop">
+                    <i class="material-icons md-white md-36">person</i>
+                    <div id="account-container" class="mini-container desktop">
+                        <div id="login">
+                            <h3 class="mini-container-header">Log in to your account</h3>
+                            <div class="login-info-wrapper">
+                                <label for="login-email">Email:</label><input placeholder="someone@example.com" type="email"
+                                    id="login-email">
+                            </div>
+                            <div class="login-info-wrapper">
+                                <label for="login-pswrd">Password:</label><input placeholder="Password" type="password"
+                                    id="login-pswrd">
+                            </div>
+                        </div>
+                        <button>Log In</button>
+                        <div id="create-account">
+                            <span>Don't have an account?</span><span class="underline pointer">Create Account</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="mini-shopping-icon" class="pointer mini-icon">
+                    <i class="material-icons md-white md-36">shopping_cart</i>
+                    <div id="cart-qty"></div>
+                    <div id="cart-container" class="mini-container">
+                        <h3 id="cart-header" class="mini-container-header"></h3>
+                        <ul id="cart-items">
+
+                        </ul>
+                        <div id="cart-bottom-container">
+                            <div id="cart-bottom-info">
+                                <div id="cart-view-cart" class="pointer">View Cart</div>
+                                <div id="cart-total">Subtotal: $<span id="cart-subtotal">541.97</span></div>
+                            </div>
+                            <button>Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <header>
+        <div id="header-wrapper">
+
+            <!-- <div id="most-top">
+                    <div>Contact us today at: (323) 513-2819</div>
+                    <ul>
+                        <li class="pointer">My Account</li>
+                        <li class="pointer">Sign Up</li>
+                        <li class="pointer">Help & Contact</li>
+                    </ul>
+                </div> -->
+
+            <div class="main">
+                <img src="https://i.postimg.cc/T2VvTQ16/logo-4.png" alt="phoneRX" class="pointer desktop" height="70rem">
+                <div id="search-container">
+                    <form>
+                        <input type="text" placeholder="Search..." name="q" autocomplete="off" id="search">
+                        <button type="submit"><i class="material-icons">search</i></button>
+                    </form>
+                    <ul id="search-results">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--
+    <div id="banner" class="normalize-width">
+        <div id="banner-img"></div>
+        <div id="banner-text">
+            <h2>Get the Phone you <span>Love</span></h2>
+            <p>Unlock your power with the phone of your deams</p>
+        </div>
+    </div>
+-->
+
+
+
+
+
+    <main class="normalize-width">
+
+
+        <section id="left-side-filter">
+            <h3 id="heading">Filter Results by:</h3>
+            <div id="filter-btn-container" class="mobile">
+                <button id="filter-apply">Apply</button>
+            </div>
+        </section>
+
+
+        <section id="main-content">
+            <div id="main-content-header">
+                <div id="sort-by" class="desktop"></div>
+                <div class="mobile" id="sort-by-container">
+                    <button id="sortBtn">Sort</button>
+                    <div id="sort-by-pop-out">
+                        <div id="sort-by-pop-out-wrapper">
+                            <h3>Sort By:</h3>
+                            <ul>
+                                <li class="pop-out-menu-item selected">Name: A to Z'</li>
+                                <li class="pop-out-menu-item">Name: Z to A</li>
+                                <li class="pop-out-menu-item">Price: High to Low</li>
+                                <li class="pop-out-menu-item">Price: Low to High</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="mobile" id="filter-btn">Filter</button>
+            </div>
+
+            <div id="product-container">
+
+                <div id="stylo-4"></div>
+                <div id="galaxy-s8"></div>
+                <div id="galaxy-s7"></div>
+                <div id="galaxy-s9"></div>
+                <div id="iPhone-x"></div>
+                <div id="iPhone-7"></div>
+                <div id="nokia-7"></div>
+                <div id="moto-g6"></div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="footer-wrapper" class="normalize-width">
+
+
+            <div id="footer-left">
+                <div id="email-container">
+                    <h2>Sign up for phoneRX news and special offers</h2>
+
+                    <div id="email-wrapper">
+                        <input type="text" placeholder="Email" id="footer-email">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </div>
+
+                <div id="connect">
+                    <h3>Connect with us on:</h3>
+                    <ul>
+                        <li><img src="https://i.postimg.cc/gkWjCyxR/240px-Facebook-Home-logo-old-svg.png"></li>
+                        <li><img src="https://i.postimg.cc/tgC22VdG/twitter-logo-final.png"></li>
+                        <li><img src="https://i.postimg.cc/Y085yw4d/social-instagram-new-circle-512.png"></li>
+                        <li><img src="https://i.postimg.cc/fTSLSH16/512px-You-Tube-play-button-circular-2013-2017-svg.png"></li>
+                        <li><img src="https://i.postimg.cc/YqCKLjVZ/580b57fcd9996e24bc43c52e.png"></li>
+                        <li><img src="https://i.postimg.cc/5y7C96YL/images.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="footer-right">
+                <div class="footer-container" id="explore">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Phones</li>
+                        <li>iPads & Tablets</li>
+                        <li>Wearables</li>
+                        <li>Accessories</li>
+                    </ul>
+                </div>
+
+                <div class="footer-container" id="help">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Your Account</li>
+                        <li>Your Orders</li>
+                        <li>Shipping</li>
+                        <li>Returns and Exchanges</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="legal-info">
+            <div id="legal-info-wrapper" class="normalize-width">
+                <span>Copyright © 2018 by Steve Cahn. All rights reserved.</span>
+                <span>By using this site, you agree to all the <a href="">term and conditions</a></span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="librarys/dropdownMenu/dropdown-menu.js"></script>
+    <script src="javascripts/filter.js"></script>
+    <script src="javascripts/product.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/search.js"></script>
+    <script src="javascripts/cart.js"></script>
+    <script src="javascripts/cartHandler.js"></script>
+    <script src="javascripts/productsInit.js"></script>
+    <script src="javascripts/sortByInit.js"></script>
+    <script src="javascripts/filterInit.js"></script>
+    <script src="javascripts/slideMenu.js"></script>
+</body>
+
+</html>

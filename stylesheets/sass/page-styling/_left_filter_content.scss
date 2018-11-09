@@ -1,0 +1,58 @@
+@import '../partials/_imports';
+
+$padding: 1.5rem;
+
+#left-side-filter {
+	background-color: hsla(0, 0%, 89%, 1);
+	flex: none;
+
+	#heading {
+		background-color: $subtle-grey;
+		padding: $padding;
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+
+	.filter {
+		padding: 0 $padding;
+		margin: 4rem 0;
+	}
+}
+
+@media only screen and (max-width: $xsDevice) {
+	#left-side-filter {
+		z-index: 20;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: auto;
+		transform: translateX(100%);
+		transition: transform 400ms cubic-bezier(0.39, 0.58, 0.57, 1);
+
+		&.open {
+			transform: translateX(0);
+		}
+
+		button {
+			float: right;
+			margin: 1.5rem;
+			text-decoration: underline;
+			font-size: 1rem;
+		}
+	}
+}
+
+@media only screen and (min-width: $lDevice) {
+	#left-side-filter {
+		width: 250px;
+		margin-right: 5rem;
+
+		.filter {
+			&:nth-of-type(1) {
+				margin-top: 2rem;
+			}
+		}
+	}
+}

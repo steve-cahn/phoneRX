@@ -1,0 +1,54 @@
+@import '../partials/_imports';
+
+header {
+	background-color: $lighter-prim-clr;
+	border-bottom: 3px solid $primary-color;
+
+	#most-top {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.8rem;
+		letter-spacing: 0.1rem;
+		padding-top: 1rem;
+		color: rgba(0, 0, 0, 0.9);
+
+		ul {
+			display: flex;
+			justify-content: flex-end;
+
+			li {
+				margin-left: 2rem;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.side {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: $xsDevice) {
+	header {
+		border-top: 3px solid $primary-color;
+	}
+}
+
+@media only screen and (min-width: $lDevice) {
+	#header-wrapper {
+		width: 100%;
+		max-width: 1350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+	}
+}

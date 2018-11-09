@@ -1,0 +1,88 @@
+@import 'partials/_imports';
+@import 'partials/normalize';
+
+@import '../../librarys/dropdownMenu/dropdown-menu';
+
+@import 'page-styling/_header.scss';
+@import 'page-styling/_search.scss';
+@import 'page-styling/_nav.scss';
+@import 'page-styling/_account.scss';
+@import 'page-styling/_mini-cart.scss';
+@import 'page-styling/_banner.scss';
+@import 'page-styling/_main-content.scss';
+@import 'page-styling/main-content-popout';
+@import 'page-styling/_left_filter_content.scss';
+@import 'page-styling/_checkbox-container.scss';
+@import 'page-styling/_product.scss';
+@import 'page-styling/_footer';
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 0.1rem;
+	background-color: $off-white;
+}
+
+.no-transition * {
+	transition: none !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.normalize-width {
+	width: 100%;
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: $xsDevice) {
+	.normalize-width {
+		width: 90%;
+	}
+	.desktop {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: $lDevice) {
+	.mobile {
+		display: none !important;
+	}
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.horizontal-center {
+	display: flex;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.material-icons {
+	user-select: none;
+}
+
+.md-white {
+	color: rgba(255, 255, 255, 0.8);
+}
+.md-36 {
+	font-size: 36px !important;
+}

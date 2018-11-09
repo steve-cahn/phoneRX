@@ -1,0 +1,21 @@
+@mixin shadow {
+	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+		0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+@mixin animationOpen {
+	height: auto;
+	overflow: visible;
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.05s linear, transform 0.15s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@mixin animationClose {
+	transform: scale(0.8);
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	border: none;
+}
