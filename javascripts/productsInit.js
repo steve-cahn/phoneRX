@@ -2,7 +2,7 @@
 /* ------  Products ----- */
 /* ---------------------- */
 
-(function() {
+(function () {
 	var stylo4Container = document.getElementById('stylo-4');
 	var stylo4 = new Product({
 		container: stylo4Container,
@@ -25,8 +25,7 @@
 	var galaxyS7 = new Product({
 		container: galaxyS7Container,
 		desc: {
-			imgURL:
-				'https://i.postimg.cc/pLQN58Cf/samsung-sm-g930uzkaxaa-galaxy-s7-unlocked-cdma-1261398.jpg',
+			imgURL: 'https://i.postimg.cc/pLQN58Cf/samsung-sm-g930uzkaxaa-galaxy-s7-unlocked-cdma-1261398.jpg',
 			colors: ['Black', 'Green'],
 			dataAttr: {
 				title: 'Galaxy S7',
@@ -43,8 +42,7 @@
 	var galaxyS8 = new Product({
 		container: galaxyS8Container,
 		desc: {
-			imgURL:
-				'https://i.postimg.cc/fLL1PPNC/nokia-11ctls11a03-7-1-dual-sim-64gb-smartphone-1436796.jpg',
+			imgURL: 'https://i.postimg.cc/FHsM4jjd/samsung-sm-g955f-ds-64gb-blk-galaxy-s8-duos-sm-g955f-1336287.jpg',
 			colors: ['White', 'Pink'],
 			dataAttr: {
 				title: 'Galaxy S8',
@@ -61,8 +59,7 @@
 	var galaxyS9 = new Product({
 		container: galaxyS9Container,
 		desc: {
-			imgURL:
-				'https://i.postimg.cc/wBFS0pS3/samsung-sm-g960uzkaxaa-samsung-galaxy-s9-1394702.jpg',
+			imgURL: 'https://i.postimg.cc/wBFS0pS3/samsung-sm-g960uzkaxaa-samsung-galaxy-s9-1394702.jpg',
 			colors: ['Blue', 'Red'],
 			dataAttr: {
 				title: 'Galaxy S9',
@@ -113,8 +110,7 @@
 	var nokia7 = new Product({
 		container: nokia7Container,
 		desc: {
-			imgURL:
-				'https://i.postimg.cc/fLL1PPNC/nokia-11ctls11a03-7-1-dual-sim-64gb-smartphone-1436796.jpg',
+			imgURL: 'https://i.postimg.cc/fLL1PPNC/nokia-11ctls11a03-7-1-dual-sim-64gb-smartphone-1436796.jpg',
 			colors: ['Black', 'Blue'],
 			dataAttr: {
 				title: 'Nokia 7',
@@ -131,8 +127,7 @@
 	var motoG6 = new Product({
 		container: motoG6Container,
 		desc: {
-			imgURL:
-				'https://i.postimg.cc/G256nj3C/moto-paae0000us-moto-g6-32gb-smartphone-1400284.jpg',
+			imgURL: 'https://i.postimg.cc/G256nj3C/moto-paae0000us-moto-g6-32gb-smartphone-1400284.jpg',
 			colors: ['Black', 'Blue'],
 			dataAttr: {
 				title: 'Moto G6',
